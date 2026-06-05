@@ -187,7 +187,7 @@ export default function BookingAndMap() {
               <div className="absolute inset-0 pointer-events-none border-4 border-transparent group-hover:border-gold-500/20 transition-colors duration-700 z-10 rounded-3xl"></div>
               {/* Google Maps Embed using exact provided address */}
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.020755913495!2d78.031976!3d30.3223069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929bfdb013217%3A0x6b10de67a308b49e!2sOm%20Homeopathic%20Speciality%20Clinic!5e0!3m2!1sen!2sin!4v1716301234567!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=Om+Homeopathic+Speciality+Clinic,+Dehradun&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
