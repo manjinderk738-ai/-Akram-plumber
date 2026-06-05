@@ -66,7 +66,7 @@ export default function Hero() {
                 <ArrowRight size={18} className="transform group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="https://maps.app.goo.gl/3wz89q2u5q1z8z5Z9"
+                href="https://www.google.com/maps/search/?api=1&query=Om+Homeopathic+Speciality+Clinic,+Dehradun"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-white/5 backdrop-blur-md border border-white/10 hover:border-gold-500/50 text-white px-8 py-4 rounded-full font-medium text-sm tracking-widest uppercase flex items-center justify-center gap-3 transition-all hover:bg-white/10 shadow-lg"

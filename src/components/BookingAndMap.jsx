@@ -149,7 +149,7 @@ export default function BookingAndMap() {
                     <h5 className="font-bold text-lg uppercase tracking-widest mb-1 text-white">Location</h5>
                     <p className="text-slate-400 font-light leading-relaxed mb-4">NH 72A, Jaligaon, Subhash Nagar,<br/>Dehradun, Uttarakhand 248002</p>
                     <a
-                      href="https://maps.app.goo.gl/3wz89q2u5q1z8z5Z9"
+                      href="https://www.google.com/maps/search/?api=1&query=Om+Homeopathic+Speciality+Clinic,+Dehradun"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/5 hover:bg-gradient-gold hover:text-black border border-white/10 hover:border-gold-500 text-white text-sm font-bold uppercase tracking-widest rounded-full transition-all duration-500 shadow-lg"
