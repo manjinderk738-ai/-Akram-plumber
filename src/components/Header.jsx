@@ -21,7 +21,7 @@ export default function Header() {
                 <h1 className="text-2xl font-serif font-bold text-white tracking-tight leading-none">
                   Dr. OM
                 </h1>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-gold-500 font-semibold mt-1">Dental & Implant Centre</span>
+                <span className="text-[10px] uppercase tracking-[0.2em] text-gold-500 font-semibold mt-1">Homeopathic Speciality Clinic</span>
               </div>
             </div>
 

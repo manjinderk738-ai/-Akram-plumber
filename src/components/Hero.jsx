@@ -41,19 +41,19 @@ export default function Hero() {
           >
             <motion.div variants={itemVariants} className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 shadow-sm mb-8 backdrop-blur-md">
               <span className="flex h-2 w-2 rounded-full bg-gold-500"></span>
-              <span className="text-xs font-semibold tracking-widest uppercase text-slate-300">World-Class Dentistry in Mohali</span>
+              <span className="text-xs font-semibold tracking-widest uppercase text-slate-300">Premium Homeopathy in Dehradun</span>
             </motion.div>
 
             <motion.h1 variants={itemVariants} className="text-5xl sm:text-6xl lg:text-7xl font-serif font-bold text-white tracking-tight mb-8 leading-[1.1]">
               Artistry in <br/>
               <span className="relative inline-block mt-2">
-                <span className="relative z-10 text-gradient">Dental Care</span>
+                <span className="relative z-10 text-gradient">Homeopathic Care</span>
                 <span className="absolute bottom-2 left-0 w-full h-4 bg-gold-500/20 -z-10 transform -rotate-2"></span>
               </span>
             </motion.h1>
 
             <motion.p variants={itemVariants} className="text-lg text-slate-300 mb-10 max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
-              Experience a new standard of dental excellence. Dr. Om's Dental & Implant Centre combines cutting-edge technology with bespoke patient care to craft your perfect smile.
+              Experience a new standard of homeopathic excellence. Om Homeopathic Speciality Clinic combines cutting-edge technology with bespoke patient care to restore your natural health.
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
@@ -66,7 +66,7 @@ export default function Hero() {
                 <ArrowRight size={18} className="transform group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="https://maps.google.com/maps?daddr=Dr.+Om's+Dental+%26+Implant+Centre,+Booth+No-44,+Sector+55,+Phase+1,+Sahibzada+Ajit+Singh+Nagar,+Punjab+160055"
+                href="https://maps.app.goo.gl/3wz89q2u5q1z8z5Z9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-white/5 backdrop-blur-md border border-white/10 hover:border-gold-500/50 text-white px-8 py-4 rounded-full font-medium text-sm tracking-widest uppercase flex items-center justify-center gap-3 transition-all hover:bg-white/10 shadow-lg"
@@ -106,7 +106,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-zinc-900/10 mix-blend-overlay z-10"></div>
               <img
                 src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-                alt="Premium Dental Clinic Interior"
+                alt="Premium Homeopathic Clinic Interior"
                 className="w-full h-[600px] object-cover scale-105"
               />
 
@@ -115,7 +115,7 @@ export default function Hero() {
                 <div className="glass-dark rounded-2xl p-6 flex items-center justify-between">
                   <div>
                     <p className="text-white font-serif text-xl mb-1">State of the Art</p>
-                    <p className="text-slate-300 text-sm font-light">Advanced Dental Implants</p>
+                    <p className="text-slate-300 text-sm font-light">Specialized Homeopathic Treatments</p>
                   </div>
                   <div className="w-12 h-12 rounded-full bg-gold-500 flex items-center justify-center shadow-lg shadow-gold-500/30">
                     <Star size={20} className="text-white fill-current" />

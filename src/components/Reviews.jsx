@@ -6,13 +6,13 @@ const reviews = [
   {
     name: 'Aarti Sharma',
     date: '2 weeks ago',
-    text: 'Best dental clinic in Mohali! Dr. Om is extremely professional and patient. The clinic is very clean and the staff is cooperative.',
+    text: 'Osteo arthritis and joint problems relieved fastly by om clinic treatment. Highly recommend their personalized care.',
     rating: 5
   },
   {
     name: 'Rajinder Singh',
     date: '1 month ago',
-    text: 'Got my dental implants done here. Painless experience and very premium care. Highly recommended for anyone looking for serious dental work.',
+    text: 'Best doctor for consultation and treatment for skin disorders. Very professional and caring approach.',
     rating: 5
   },
   {
@@ -56,7 +56,7 @@ export default function Reviews() {
             </div>
 
             <p className="text-slate-300 text-lg font-light leading-relaxed">
-              We take pride in delivering the highest quality dental care. Our perfect rating reflects an unwavering commitment to patient excellence.
+              We take pride in delivering the highest quality homeopathic care. Our perfect rating reflects an unwavering commitment to patient excellence.
             </p>
           </motion.div>
 

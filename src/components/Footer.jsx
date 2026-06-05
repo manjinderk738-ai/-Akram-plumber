@@ -7,10 +7,10 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <h2 className="text-3xl font-serif tracking-wide mb-6">
-          Dr. <span className="text-[var(--color-gold)] italic font-light">Om's</span> Dental & Implant Centre
+          Om Homeopathic Speciality Clinic
         </h2>
         <p className="text-gray-400 mb-10 max-w-md mx-auto font-light leading-relaxed">
-          Delivering uncompromising dental excellence in Mohali. State-of-the-art facilities, bespoke patient care, and a commitment to perfecting your smile.
+          Redefining homeopathic excellence with personalized care and advanced natural treatments.
         </p>
 
         <div className="flex justify-center gap-6 mb-10">
@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
 
         <div className="text-gray-500 text-sm font-light border-t border-white/5 pt-8">
-          &copy; {new Date().getFullYear()} Dr. Om's Dental & Implant Centre. All rights reserved. <br/>
+          &copy; {new Date().getFullYear()} Om Homeopathic Speciality Clinic. All rights reserved. <br/>
           <span className="opacity-50 text-xs mt-2 inline-block">Crafted for premium healthcare.</span>
         </div>
       </div>

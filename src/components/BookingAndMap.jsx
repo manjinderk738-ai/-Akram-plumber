@@ -43,7 +43,7 @@ export default function BookingAndMap() {
           </div>
           <h3 className="text-5xl font-serif mb-6 leading-tight">Request an Appointment</h3>
           <p className="text-lg text-gray-300 font-light">
-            Schedule a private consultation at our state-of-the-art facility. Experience a new standard of personalized dental care.
+            Schedule a private consultation at our state-of-the-art facility. Experience a new standard of personalized homeopathic care.
           </p>
         </motion.div>
 
@@ -92,8 +92,8 @@ export default function BookingAndMap() {
                 <label htmlFor="service" className="block text-sm font-medium text-slate-400 mb-2 uppercase tracking-widest">Service Required</label>
                 <select id="service" name="service" value={formData.service} onChange={handleChange} className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:ring-1 focus:ring-gold-500 focus:border-gold-500 outline-none transition-all appearance-none [&>option]:bg-zinc-900 shadow-inner">
                   <option value="General Checkup">General Checkup</option>
-                  <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
-                  <option value="Dental Implants">Dental Implants</option>
+                  <option value="Skin Problems">Skin Problems</option>
+                  <option value="Specialized Treatments">Specialized Treatments</option>
                   <option value="Orthodontics">Orthodontics</option>
                   <option value="Other">Other</option>
                 </select>
@@ -101,7 +101,7 @@ export default function BookingAndMap() {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-slate-400 mb-2 uppercase tracking-widest">Additional Notes (Optional)</label>
-                <textarea id="message" name="message" rows="3" value={formData.message} onChange={handleChange} className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:ring-1 focus:ring-gold-500 focus:border-gold-500 outline-none transition-all placeholder-slate-600 resize-none shadow-inner" placeholder="Tell us about your dental concern..."></textarea>
+                <textarea id="message" name="message" rows="3" value={formData.message} onChange={handleChange} className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:ring-1 focus:ring-gold-500 focus:border-gold-500 outline-none transition-all placeholder-slate-600 resize-none shadow-inner" placeholder="Tell us about your health concern..."></textarea>
               </div>
 
               <button type="submit" className="w-full btn-gold py-4 px-8 rounded-xl flex items-center justify-center gap-3 mt-4">
@@ -130,9 +130,9 @@ export default function BookingAndMap() {
                   </div>
                   <div>
                     <h5 className="font-bold text-lg uppercase tracking-widest mb-1 text-white">Location</h5>
-                    <p className="text-slate-400 font-light leading-relaxed mb-4">Booth No-44, Sector 55, Phase 1,<br/>Sahibzada Ajit Singh Nagar,<br/>Punjab 160055</p>
+                    <p className="text-slate-400 font-light leading-relaxed mb-4">Shop No 2, Main Market, Natraj Cinema Rd,<br/>Dehradun, Uttarakhand 248001</p>
                     <a
-                      href="https://maps.google.com/maps?daddr=Dr.+Om's+Dental+%26+Implant+Centre,+Booth+No-44,+Sector+55,+Phase+1,+Sahibzada+Ajit+Singh+Nagar,+Punjab+160055"
+                      href="https://maps.app.goo.gl/3wz89q2u5q1z8z5Z9"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/5 hover:bg-gradient-gold hover:text-black border border-white/10 hover:border-gold-500 text-white text-sm font-bold uppercase tracking-widest rounded-full transition-all duration-500 shadow-lg"
@@ -170,7 +170,7 @@ export default function BookingAndMap() {
               <div className="absolute inset-0 pointer-events-none border-4 border-transparent group-hover:border-gold-500/20 transition-colors duration-700 z-10 rounded-3xl"></div>
               {/* Google Maps Embed using exact provided address */}
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.404870020163!2d76.7027471!3d30.7323864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef9e8f176de7%3A0x8e8eb4bd9235e115!2sDr.%20Om&#39;s%20Dental%20%26%20Implant%20Centre!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.020755913495!2d78.031976!3d30.3223069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929bfdb013217%3A0x6b10de67a308b49e!2sOm%20Homeopathic%20Speciality%20Clinic!5e0!3m2!1sen!2sin!4v1716301234567!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

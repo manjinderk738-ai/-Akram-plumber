@@ -4,12 +4,12 @@ import { Activity, Sparkles, Syringe, ShieldCheck } from 'lucide-react';
 
 const services = [
   {
-    title: 'General Dentistry',
-    description: 'Comprehensive dental exams, cleanings, and preventative care to keep your smile healthy and bright.',
+    title: 'Consultation',
+    description: 'Comprehensive evaluation and personalized homeopathic treatment plans.',
     icon: Activity,
   },
   {
-    title: 'Cosmetic Dentistry',
+    title: 'Skin Problems',
     description: 'Transform your smile with our premium teeth whitening, veneers, and aesthetic treatments.',
     icon: Sparkles,
   },
@@ -19,7 +19,7 @@ const services = [
     icon: Syringe,
   },
   {
-    title: 'Dental Implants',
+    title: 'Specialized Treatments',
     description: 'Permanent, natural-looking tooth replacements using state-of-the-art materials and techniques.',
     icon: ShieldCheck,
   }
@@ -45,9 +45,9 @@ export default function Services() {
             <div className="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></div>
             <span className="text-xs font-semibold tracking-widest uppercase text-gold-400">Expertise</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-serif mb-6 leading-tight">Elevated Dental Services</h2>
+          <h2 className="text-5xl md:text-6xl font-serif mb-6 leading-tight">Specialized Homeopathic Services</h2>
           <p className="text-lg text-slate-300 font-light max-w-2xl mx-auto">
-            We provide a wide range of top-tier dental services tailored to meet the unique needs of every patient, using state-of-the-art technology.
+            We offer a comprehensive range of premium treatments tailored to restore your natural health and well-being.
           </p>
         </motion.div>
 
