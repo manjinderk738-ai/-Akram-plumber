@@ -1,10 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+  --color-gold-400: #e5c158;
   --color-gold-500: #d4af37;
   --color-gold-600: #b5952f;
-  --color-navy-900: #0a192f;
-  --color-navy-800: #112240;
 }
 
 @layer base {
@@ -12,7 +11,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-slate-50 text-slate-900;
+    @apply bg-black text-slate-100;
   }
 }
 
@@ -27,13 +26,19 @@
     @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-xl;
   }
   .glass-dark {
-    @apply bg-navy-900/80 backdrop-blur-lg border border-white/10 shadow-xl;
+    @apply bg-zinc-900/40 backdrop-blur-xl border border-white/5 shadow-2xl;
+  }
+  .glass-dark-card {
+    @apply bg-zinc-950/60 backdrop-blur-lg border border-white/5 hover:border-gold-500/30 transition-colors shadow-2xl;
   }
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold-500 to-amber-300;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold-400 via-amber-200 to-gold-600;
   }
   .bg-gradient-gold {
-    @apply bg-gradient-to-r from-gold-600 to-gold-500;
+    @apply bg-gradient-to-r from-[var(--color-gold-600)] via-[var(--color-gold-500)] to-[var(--color-gold-600)];
+  }
+  .btn-gold {
+    @apply relative overflow-hidden bg-gradient-to-r from-[var(--color-gold-600)] via-[var(--color-gold-500)] to-[var(--color-gold-600)] text-black font-semibold shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] transition-all duration-300;
   }
 }
 

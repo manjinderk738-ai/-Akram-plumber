@@ -28,7 +28,7 @@ export default function Hero() {
     <section id="home" className="relative min-h-screen flex items-center bg-transparent overflow-hidden pt-24 pb-16">
       {/* Abstract Background Elements */}
       <div className="absolute top-[-10%] right-[-5%] w-[800px] h-[800px] bg-gradient-to-br from-gold-500/10 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-      <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-gradient-to-tr from-navy-900/5 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+      <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-gradient-to-tr from-zinc-900/5 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
@@ -59,25 +59,27 @@ export default function Hero() {
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
               <a
                 href="#booking"
-                className="group relative overflow-hidden bg-gold-500 text-navy-900 px-8 py-4 rounded-full font-medium text-sm tracking-wider uppercase flex items-center justify-center gap-3 transition-all shadow-2xl hover:shadow-gold-500/40"
+                className="group relative overflow-hidden bg-gradient-gold text-black px-8 py-4 rounded-full font-bold text-sm tracking-widest uppercase flex items-center justify-center gap-3 transition-all shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)]"
               >
-                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></span>
+                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></span>
                 <span>Book Consultation</span>
                 <ArrowRight size={18} className="transform group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href={`tel:${phoneNumber}`}
-                className="group bg-white/5 backdrop-blur-md border border-white/10 text-white px-8 py-4 rounded-full font-medium text-sm tracking-wider uppercase flex items-center justify-center gap-3 transition-all hover:bg-white/10 hover:border-white/20"
+                href="https://maps.google.com/maps?daddr=Dr.+Om's+Dental+%26+Implant+Centre,+Booth+No-44,+Sector+55,+Phase+1,+Sahibzada+Ajit+Singh+Nagar,+Punjab+160055"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-white/5 backdrop-blur-md border border-white/10 hover:border-gold-500/50 text-white px-8 py-4 rounded-full font-medium text-sm tracking-widest uppercase flex items-center justify-center gap-3 transition-all hover:bg-white/10 shadow-lg"
               >
-                <Phone size={18} className="text-gold-500" />
-                <span>Direct Call</span>
+                <span className="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></span>
+                <span>Get Directions</span>
               </a>
             </motion.div>
 
             <motion.div variants={itemVariants} className="mt-12 flex items-center justify-center lg:justify-start gap-6 pt-8 border-t border-white/10">
               <div className="flex -space-x-4">
                 {[1, 2, 3, 4].map((i) => (
-                  <img key={i} className="w-12 h-12 rounded-full border-2 border-navy-900 shadow-sm" src={`https://i.pravatar.cc/100?img=${i + 10}`} alt={`Patient ${i}`} />
+                  <img key={i} className="w-12 h-12 rounded-full border-2 border-zinc-900 shadow-sm" src={`https://i.pravatar.cc/100?img=${i + 10}`} alt={`Patient ${i}`} />
                 ))}
               </div>
               <div className="flex flex-col">
@@ -101,7 +103,7 @@ export default function Hero() {
             <div className="absolute -inset-4 border border-gold-500/30 rounded-[2.5rem] transform rotate-3 scale-105 z-0 hidden lg:block transition-transform duration-700 hover:rotate-6"></div>
 
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl z-10 animate-float">
-              <div className="absolute inset-0 bg-navy-900/10 mix-blend-overlay z-10"></div>
+              <div className="absolute inset-0 bg-zinc-900/10 mix-blend-overlay z-10"></div>
               <img
                 src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
                 alt="Premium Dental Clinic Interior"
