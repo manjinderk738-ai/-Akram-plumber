@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Star } from 'lucide-react';
+import { ArrowRight, Star, Phone } from 'lucide-react';
 
 export default function Hero() {
+  const phoneNumber = "+919417689633";
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -24,75 +25,98 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative bg-gradient-to-br from-blue-50 to-white overflow-hidden pt-12 sm:pt-20 lg:pt-24 pb-16">
-      {/* Background Graphic Elements */}
-      <div className="absolute top-0 right-0 -mr-20 -mt-20 w-[600px] h-[600px] bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
-      <div className="absolute top-40 left-0 -ml-20 w-[500px] h-[500px] bg-blue-50 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
+    <section id="home" className="relative min-h-screen flex items-center bg-transparent overflow-hidden pt-24 pb-16">
+      {/* Abstract Background Elements */}
+      <div className="absolute top-[-10%] right-[-5%] w-[800px] h-[800px] bg-gradient-to-br from-gold-500/10 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+      <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-gradient-to-tr from-navy-900/5 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div className="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
 
           <motion.div
-            className="lg:col-span-6 text-center lg:text-left"
+            className="lg:col-span-6 text-center lg:text-left z-20"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
-            <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-semibold text-sm mb-6 shadow-sm">
-              <Star size={16} className="fill-current" />
-              <span>Best Dental Clinic in Mohali (5.0 Rating)</span>
+            <motion.div variants={itemVariants} className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 shadow-sm mb-8 backdrop-blur-md">
+              <span className="flex h-2 w-2 rounded-full bg-gold-500"></span>
+              <span className="text-xs font-semibold tracking-widest uppercase text-slate-300">World-Class Dentistry in Mohali</span>
             </motion.div>
 
-            <motion.h1 variants={itemVariants} className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 tracking-tight mb-6 leading-tight">
-              Premium Dental <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
-                Care & Implants
+            <motion.h1 variants={itemVariants} className="text-5xl sm:text-6xl lg:text-7xl font-serif font-bold text-white tracking-tight mb-8 leading-[1.1]">
+              Artistry in <br/>
+              <span className="relative inline-block mt-2">
+                <span className="relative z-10 text-gradient">Dental Care</span>
+                <span className="absolute bottom-2 left-0 w-full h-4 bg-gold-500/20 -z-10 transform -rotate-2"></span>
               </span>
             </motion.h1>
 
-            <motion.p variants={itemVariants} className="text-lg sm:text-xl text-gray-600 mb-10 max-w-2xl mx-auto lg:mx-0">
-              Experience world-class dentistry with state-of-the-art technology. Dr. Om's Dental & Implant Centre ensures your smile is in the best hands.
+            <motion.p variants={itemVariants} className="text-lg text-slate-300 mb-10 max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
+              Experience a new standard of dental excellence. Dr. Om's Dental & Implant Centre combines cutting-edge technology with bespoke patient care to craft your perfect smile.
             </motion.p>
 
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
               <a
                 href="#booking"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg flex items-center justify-center gap-2 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="group relative overflow-hidden bg-gold-500 text-navy-900 px-8 py-4 rounded-full font-medium text-sm tracking-wider uppercase flex items-center justify-center gap-3 transition-all shadow-2xl hover:shadow-gold-500/40"
               >
-                Book an Appointment
-                <ArrowRight size={20} />
+                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></span>
+                <span>Book Consultation</span>
+                <ArrowRight size={18} className="transform group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="#services"
-                className="bg-white hover:bg-gray-50 text-gray-900 border border-gray-200 px-8 py-4 rounded-full font-semibold text-lg flex items-center justify-center transition-all shadow-sm hover:shadow-md"
+                href={`tel:${phoneNumber}`}
+                className="group bg-white/5 backdrop-blur-md border border-white/10 text-white px-8 py-4 rounded-full font-medium text-sm tracking-wider uppercase flex items-center justify-center gap-3 transition-all hover:bg-white/10 hover:border-white/20"
               >
-                Explore Services
+                <Phone size={18} className="text-gold-500" />
+                <span>Direct Call</span>
               </a>
+            </motion.div>
+
+            <motion.div variants={itemVariants} className="mt-12 flex items-center justify-center lg:justify-start gap-6 pt-8 border-t border-white/10">
+              <div className="flex -space-x-4">
+                {[1, 2, 3, 4].map((i) => (
+                  <img key={i} className="w-12 h-12 rounded-full border-2 border-navy-900 shadow-sm" src={`https://i.pravatar.cc/100?img=${i + 10}`} alt={`Patient ${i}`} />
+                ))}
+              </div>
+              <div className="flex flex-col">
+                <div className="flex items-center gap-1">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star key={star} size={16} className="text-gold-500 fill-current" />
+                  ))}
+                </div>
+                <span className="text-sm font-medium text-slate-300 mt-1">5.0 / 5.0 from 64+ Reviews</span>
+              </div>
             </motion.div>
           </motion.div>
 
           <motion.div
-            className="lg:col-span-6 mt-16 lg:mt-0"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+            className="lg:col-span-6 mt-16 lg:mt-0 relative"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.2, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
-              {/* Using a placeholder for the hero image representing a modern dental clinic */}
+            {/* Decorative Frame */}
+            <div className="absolute -inset-4 border border-gold-500/30 rounded-[2.5rem] transform rotate-3 scale-105 z-0 hidden lg:block transition-transform duration-700 hover:rotate-6"></div>
+
+            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl z-10 animate-float">
+              <div className="absolute inset-0 bg-navy-900/10 mix-blend-overlay z-10"></div>
               <img
-                src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                alt="Modern Dental Clinic"
-                className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
+                src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                alt="Premium Dental Clinic Interior"
+                className="w-full h-[600px] object-cover scale-105"
               />
-              <div className="absolute bottom-0 left-0 p-8 z-20">
-                <div className="bg-white/20 backdrop-blur-md rounded-2xl p-4 border border-white/30 flex items-center gap-4">
-                  <div className="bg-blue-600 text-white p-3 rounded-full">
-                    <Star size={24} className="fill-current" />
-                  </div>
+
+              {/* Premium Floating Badge */}
+              <div className="absolute bottom-8 left-8 right-8 z-20">
+                <div className="glass-dark rounded-2xl p-6 flex items-center justify-between">
                   <div>
-                    <p className="text-white font-bold text-xl">5.0 / 5.0</p>
-                    <p className="text-blue-100 text-sm">Based on 64 Reviews</p>
+                    <p className="text-white font-serif text-xl mb-1">State of the Art</p>
+                    <p className="text-slate-300 text-sm font-light">Advanced Dental Implants</p>
+                  </div>
+                  <div className="w-12 h-12 rounded-full bg-gold-500 flex items-center justify-center shadow-lg shadow-gold-500/30">
+                    <Star size={20} className="text-white fill-current" />
                   </div>
                 </div>
               </div>
