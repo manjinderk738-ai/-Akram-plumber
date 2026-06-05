@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Star, Phone } from 'lucide-react';
 
 export default function Hero() {
-  const phoneNumber = "+919417689633";
+  const phoneNumber = "+919760578884";
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {

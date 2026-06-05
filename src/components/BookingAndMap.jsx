@@ -8,7 +8,7 @@ export default function BookingAndMap() {
     phone: '',
     date: '',
     time: '',
-    service: 'General Checkup',
+    service: 'Consultation',
     message: ''
   });
 
@@ -19,9 +19,21 @@ export default function BookingAndMap() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulate booking
-    alert(`Thank you, ${formData.name}! Your request for an appointment on ${formData.date} at ${formData.time} has been sent to the clinic.`);
-    setFormData({ name: '', phone: '', date: '', time: '', service: 'General Checkup', message: '' });
+
+    // Format WhatsApp message
+    const whatsappNumber = "919760578884";
+    const text = `*New Appointment Request*\n\n*Name:* ${formData.name}\n*Phone:* ${formData.phone}\n*Date:* ${formData.date}\n*Time:* ${formData.time}\n*Service:* ${formData.service}\n*Notes:* ${formData.message || 'None'}`;
+
+    const encodedText = encodeURIComponent(text);
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+
+    // Redirect to WhatsApp
+    window.open(whatsappUrl, '_blank');
+
+    // Reset form after a slight delay
+    setTimeout(() => {
+      setFormData({ name: '', phone: '', date: '', time: '', service: 'Consultation', message: '' });
+    }, 1000);
   };
 
   return (
@@ -79,11 +91,16 @@ export default function BookingAndMap() {
                   <label htmlFor="time" className="block text-sm font-medium text-slate-400 mb-2 uppercase tracking-widest">Preferred Time</label>
                   <select id="time" name="time" required value={formData.time} onChange={handleChange} className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:ring-1 focus:ring-gold-500 focus:border-gold-500 outline-none transition-all appearance-none [&>option]:bg-zinc-900 shadow-inner">
                     <option value="" disabled className="text-slate-500">Select Time</option>
-                    <option value="10:00 AM">10:00 AM</option>
-                    <option value="11:30 AM">11:30 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
                     <option value="1:00 PM">1:00 PM</option>
-                    <option value="5:30 PM">5:30 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                    <option value="5:00 PM">5:00 PM</option>
                     <option value="7:00 PM">7:00 PM</option>
+
+
+
+
+
                   </select>
                 </div>
               </div>
@@ -91,10 +108,10 @@ export default function BookingAndMap() {
               <div>
                 <label htmlFor="service" className="block text-sm font-medium text-slate-400 mb-2 uppercase tracking-widest">Service Required</label>
                 <select id="service" name="service" value={formData.service} onChange={handleChange} className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:ring-1 focus:ring-gold-500 focus:border-gold-500 outline-none transition-all appearance-none [&>option]:bg-zinc-900 shadow-inner">
-                  <option value="General Checkup">General Checkup</option>
-                  <option value="Skin Problems">Skin Problems</option>
-                  <option value="Specialized Treatments">Specialized Treatments</option>
-                  <option value="Orthodontics">Orthodontics</option>
+                  <option value="Consultation">Consultation</option>
+                  <option value="Chronic Diseases">Chronic Diseases</option>
+                  <option value="Skin & Hair Care">Skin & Hair Care</option>
+                  <option value="Holistic Wellness">Holistic Wellness</option>
                   <option value="Other">Other</option>
                 </select>
               </div>
@@ -130,7 +147,7 @@ export default function BookingAndMap() {
                   </div>
                   <div>
                     <h5 className="font-bold text-lg uppercase tracking-widest mb-1 text-white">Location</h5>
-                    <p className="text-slate-400 font-light leading-relaxed mb-4">Shop No 2, Main Market, Natraj Cinema Rd,<br/>Dehradun, Uttarakhand 248001</p>
+                    <p className="text-slate-400 font-light leading-relaxed mb-4">NH 72A, Jaligaon, Subhash Nagar,<br/>Dehradun, Uttarakhand 248002</p>
                     <a
                       href="https://maps.app.goo.gl/3wz89q2u5q1z8z5Z9"
                       target="_blank"
@@ -149,7 +166,7 @@ export default function BookingAndMap() {
                   </div>
                   <div>
                     <h5 className="font-bold text-lg uppercase tracking-widest mb-1 text-white">Working Hours</h5>
-                    <p className="text-slate-400 font-light leading-relaxed">Mon - Sat: 10:00 am - 2:00 pm,<br/> 5:00 pm - 9:00 pm</p>
+                    <p className="text-slate-400 font-light leading-relaxed">Mon - Sat: 11:00 AM - 8:00 PM</p>
                     <p className="text-gold-500 font-bold tracking-widest text-xs uppercase mt-2">Sunday Closed</p>
                   </div>
                 </div>
@@ -160,7 +177,7 @@ export default function BookingAndMap() {
                   </div>
                   <div>
                     <h5 className="font-bold text-lg uppercase tracking-widest mb-1 text-white">Contact</h5>
-                    <p className="text-slate-400 font-light text-lg">+91 94176 89633</p>
+                    <p className="text-slate-400 font-light text-lg">+91 97605 78884</p>
                   </div>
                 </div>
               </div>

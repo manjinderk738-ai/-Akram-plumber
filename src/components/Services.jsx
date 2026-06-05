@@ -9,19 +9,19 @@ const services = [
     icon: Activity,
   },
   {
-    title: 'Skin Problems',
-    description: 'Transform your smile with our premium teeth whitening, veneers, and aesthetic treatments.',
+    title: 'Chronic Diseases',
+    description: 'Effective homeopathic treatment for chronic illnesses, focusing on root causes for long-term relief.',
+    icon: ShieldCheck,
+  },
+  {
+    title: 'Skin & Hair Care',
+    description: 'Safe and natural remedies for various skin conditions and hair loss without side effects.',
     icon: Sparkles,
   },
   {
-    title: 'Surgical Procedures',
-    description: 'Expert oral surgery, extractions, and advanced implant procedures with minimal discomfort.',
-    icon: Syringe,
-  },
-  {
-    title: 'Specialized Treatments',
-    description: 'Permanent, natural-looking tooth replacements using state-of-the-art materials and techniques.',
-    icon: ShieldCheck,
+    title: 'Holistic Wellness',
+    description: 'Immunity boosting and general well-being treatments using natural homeopathic medicines.',
+    icon: Activity,
   }
 ];
 

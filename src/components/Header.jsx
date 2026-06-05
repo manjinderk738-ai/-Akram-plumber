@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import { MessageCircle, Phone } from 'lucide-react';
 
 export default function Header() {
-  const whatsappNumber = "919417689633"; // without the plus, required format for WhatsApp API
-  const phoneNumber = "+919417689633";
+  const whatsappNumber = "919760578884"; // without the plus, required format for WhatsApp API
+  const phoneNumber = "+919760578884";
 
   return (
     <>

@@ -4,22 +4,25 @@ import { Star, Quote } from 'lucide-react';
 
 const reviews = [
   {
-    name: 'Aarti Sharma',
-    date: '2 weeks ago',
-    text: 'Osteo arthritis and joint problems relieved fastly by om clinic treatment. Highly recommend their personalized care.',
-    rating: 5
+    name: "Kishor Kumar Mahto",
+    date: "7 months ago",
+    rating: 5,
+    text: "One of the best homeopathy doctors I've visited. Explains everything clearly, focuses on root causes, and the results have been amazing.",
+    image: "https://ui-avatars.com/api/?name=Kishor+Kumar&background=18181b&color=fbbf24"
   },
   {
-    name: 'Rajinder Singh',
-    date: '1 month ago',
-    text: 'Best doctor for consultation and treatment for skin disorders. Very professional and caring approach.',
-    rating: 5
+    name: "Pritam Jana",
+    date: "6 months ago",
+    rating: 5,
+    text: "Nice experienced, genuine guidance consultant and treatment bills provided by dr. Om clinic, at clement town dehradun.",
+    image: "https://ui-avatars.com/api/?name=Pritam+Jana&background=18181b&color=fbbf24"
   },
   {
-    name: 'Priya Verma',
-    date: '2 months ago',
-    text: 'Amazing experience. I went for a cosmetic procedure and the results are fantastic. Truly 5-star service.',
-    rating: 5
+    name: "Sagar",
+    date: "6 months ago",
+    rating: 5,
+    text: "Best doctor for homoeopathy treatment for all diseases. Nice experienced dr om",
+    image: "https://ui-avatars.com/api/?name=Sagar&background=18181b&color=fbbf24"
   }
 ];
 
@@ -46,12 +49,12 @@ export default function Reviews() {
             <h3 className="text-5xl md:text-6xl font-serif text-white mb-8 leading-tight">Patient<br />Experiences</h3>
 
             <div className="glass-dark-card p-8 rounded-3xl flex items-center gap-6 mb-8 group hover:-translate-y-2 transition-transform duration-500">
-              <div className="text-6xl font-serif text-white">5.0</div>
+              <div className="text-6xl font-serif text-white">4.9</div>
               <div>
                 <div className="flex text-gold-500 mb-2">
                   {[...Array(5)].map((_, i) => <Star key={i} size={22} className="fill-current" />)}
                 </div>
-                <div className="text-slate-400 font-medium tracking-widest text-xs uppercase">Based on 64+ reviews</div>
+                <div className="text-slate-400 font-medium tracking-widest text-xs uppercase">Based on 188 reviews</div>
               </div>
             </div>
 
