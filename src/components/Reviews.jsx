@@ -7,14 +7,14 @@ const reviews = [
     name: "Kishor Kumar Mahto",
     date: "7 months ago",
     rating: 5,
-    text: "One of the best homeopathy doctors I've visited. Explains everything clearly, focuses on root causes, and the results have been amazing.",
+    text: "One of the best Hormone Care doctors I've visited. Explains everything clearly, focuses on root causes, and the results have been amazing.",
     image: "https://ui-avatars.com/api/?name=Kishor+Kumar&background=18181b&color=fbbf24"
   },
   {
     name: "Pritam Jana",
     date: "6 months ago",
     rating: 5,
-    text: "Nice experienced, genuine guidance consultant and treatment bills provided by dr. Om clinic, at clement town dehradun.",
+    text: "Nice experienced, genuine guidance consultant and treatment bills provided by Sovin clinic, at clement town dehradun.",
     image: "https://ui-avatars.com/api/?name=Pritam+Jana&background=18181b&color=fbbf24"
   },
   {
@@ -49,17 +49,17 @@ export default function Reviews() {
             <h3 className="text-5xl md:text-6xl font-serif text-white mb-8 leading-tight">Patient<br />Experiences</h3>
 
             <div className="glass-dark-card p-8 rounded-3xl flex items-center gap-6 mb-8 group hover:-translate-y-2 transition-transform duration-500">
-              <div className="text-6xl font-serif text-white">4.9</div>
+              <div className="text-6xl font-serif text-white">4.8</div>
               <div>
                 <div className="flex text-gold-500 mb-2">
                   {[...Array(5)].map((_, i) => <Star key={i} size={22} className="fill-current" />)}
                 </div>
-                <div className="text-slate-400 font-medium tracking-widest text-xs uppercase">Based on 188 reviews</div>
+                <div className="text-slate-400 font-medium tracking-widest text-xs uppercase">Based on 282 reviews</div>
               </div>
             </div>
 
             <p className="text-slate-300 text-lg font-light leading-relaxed">
-              We take pride in delivering the highest quality homeopathic care. Our perfect rating reflects an unwavering commitment to patient excellence.
+              We take pride in delivering the highest quality Hormonal care. Our perfect rating reflects an unwavering commitment to patient excellence.
             </p>
           </motion.div>
 

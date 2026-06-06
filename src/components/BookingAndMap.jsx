@@ -21,7 +21,7 @@ export default function BookingAndMap() {
     e.preventDefault();
 
     // Format WhatsApp message
-    const whatsappNumber = "919760578884";
+    const whatsappNumber = "919368212601";
     const text = `*New Appointment Request*\n\n*Name:* ${formData.name}\n*Phone:* ${formData.phone}\n*Date:* ${formData.date}\n*Time:* ${formData.time}\n*Service:* ${formData.service}\n*Notes:* ${formData.message || 'None'}`;
 
     const encodedText = encodeURIComponent(text);
@@ -55,7 +55,7 @@ export default function BookingAndMap() {
           </div>
           <h3 className="text-5xl font-serif mb-6 leading-tight">Request an Appointment</h3>
           <p className="text-lg text-gray-300 font-light">
-            Schedule a private consultation at our state-of-the-art facility. Experience a new standard of personalized homeopathic care.
+            Schedule a private consultation at our state-of-the-art facility. Experience a new standard of personalized Hormonal care.
           </p>
         </motion.div>
 
@@ -147,9 +147,9 @@ export default function BookingAndMap() {
                   </div>
                   <div>
                     <h5 className="font-bold text-lg uppercase tracking-widest mb-1 text-white">Location</h5>
-                    <p className="text-slate-400 font-light leading-relaxed mb-4">NH 72A, Jaligaon, Subhash Nagar,<br/>Dehradun, Uttarakhand 248002</p>
+                    <p className="text-slate-400 font-light leading-relaxed mb-4">G-14/15, Sovin Hormone Clinic, Dehradun</p>
                     <a
-                      href="https://www.google.com/maps/search/?api=1&query=Om+Homeopathic+Speciality+Clinic,+Dehradun"
+                      href="https://www.google.com/maps/search/?api=1&query=Sovin+Hormone+Clinic,+Dehradun"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/5 hover:bg-gradient-gold hover:text-black border border-white/10 hover:border-gold-500 text-white text-sm font-bold uppercase tracking-widest rounded-full transition-all duration-500 shadow-lg"
@@ -177,7 +177,7 @@ export default function BookingAndMap() {
                   </div>
                   <div>
                     <h5 className="font-bold text-lg uppercase tracking-widest mb-1 text-white">Contact</h5>
-                    <p className="text-slate-400 font-light text-lg">+91 97605 78884</p>
+                    <p className="text-slate-400 font-light text-lg">+91 93682 12601</p>
                   </div>
                 </div>
               </div>
@@ -187,7 +187,7 @@ export default function BookingAndMap() {
               <div className="absolute inset-0 pointer-events-none border-4 border-transparent group-hover:border-gold-500/20 transition-colors duration-700 z-10 rounded-3xl"></div>
               {/* Google Maps Embed using exact provided address */}
               <iframe
-                src="https://maps.google.com/maps?q=Om+Homeopathic+Speciality+Clinic,+Dehradun&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Sovin+Hormone+Clinic,+Dehradun&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

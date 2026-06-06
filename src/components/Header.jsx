@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import { MessageCircle, Phone } from 'lucide-react';
 
 export default function Header() {
-  const whatsappNumber = "919760578884"; // without the plus, required format for WhatsApp API
-  const phoneNumber = "+919760578884";
+  const whatsappNumber = "919368212601"; // without the plus, required format for WhatsApp API
+  const phoneNumber = "+919368212601";
 
   return (
     <>
@@ -19,9 +19,9 @@ export default function Header() {
             <div className="flex-shrink-0 flex items-center">
               <div className="flex flex-col">
                 <h1 className="text-2xl font-serif font-bold text-white tracking-tight leading-none">
-                  Dr. OM
+                  Sovin
                 </h1>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-gold-500 font-semibold mt-1">Homeopathic Speciality Clinic</span>
+                <span className="text-[10px] uppercase tracking-[0.2em] text-gold-500 font-semibold mt-1">Hormone Clinic</span>
               </div>
             </div>
 

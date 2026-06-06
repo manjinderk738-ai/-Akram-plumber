@@ -5,12 +5,12 @@ import { Activity, Sparkles, Syringe, ShieldCheck } from 'lucide-react';
 const services = [
   {
     title: 'Consultation',
-    description: 'Comprehensive evaluation and personalized homeopathic treatment plans.',
+    description: 'Comprehensive evaluation and personalized Hormonal treatment plans.',
     icon: Activity,
   },
   {
     title: 'Chronic Diseases',
-    description: 'Effective homeopathic treatment for chronic illnesses, focusing on root causes for long-term relief.',
+    description: 'Effective Hormonal treatment for chronic illnesses, focusing on root causes for long-term relief.',
     icon: ShieldCheck,
   },
   {
@@ -20,7 +20,7 @@ const services = [
   },
   {
     title: 'Holistic Wellness',
-    description: 'Immunity boosting and general well-being treatments using natural homeopathic medicines.',
+    description: 'Immunity boosting and general well-being treatments using natural Hormonal medicines.',
     icon: Activity,
   }
 ];
@@ -45,7 +45,7 @@ export default function Services() {
             <div className="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></div>
             <span className="text-xs font-semibold tracking-widest uppercase text-gold-400">Expertise</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-serif mb-6 leading-tight">Specialized Homeopathic Services</h2>
+          <h2 className="text-5xl md:text-6xl font-serif mb-6 leading-tight">Specialized Hormonal Services</h2>
           <p className="text-lg text-slate-300 font-light max-w-2xl mx-auto">
             We offer a comprehensive range of premium treatments tailored to restore your natural health and well-being.
           </p>
