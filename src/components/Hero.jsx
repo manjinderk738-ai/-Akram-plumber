@@ -53,7 +53,7 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p variants={itemVariants} className="text-lg text-slate-300 mb-10 max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
-              Experience a new standard of Hormonal excellence. Sovin Hormone Clinic combines cutting-edge technology with bespoke patient care to restore your natural health.
+              Experience a new standard of Hormonal excellence. Dr. Sonal Shrivastava Clinic combines cutting-edge technology with bespoke patient care to restore your natural health.
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
@@ -66,7 +66,7 @@ export default function Hero() {
                 <ArrowRight size={18} className="transform group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Sovin+Hormone+Clinic,+Dehradun"
+                href="https://www.google.com/maps/search/?api=1&query=Dr.+Sonal+Shrivastava+Clinic,+Dehradun"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-white/5 backdrop-blur-md border border-white/10 hover:border-gold-500/50 text-white px-8 py-4 rounded-full font-medium text-sm tracking-widest uppercase flex items-center justify-center gap-3 transition-all hover:bg-white/10 shadow-lg"

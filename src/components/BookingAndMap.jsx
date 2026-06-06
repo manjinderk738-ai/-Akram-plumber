@@ -147,9 +147,9 @@ export default function BookingAndMap() {
                   </div>
                   <div>
                     <h5 className="font-bold text-lg uppercase tracking-widest mb-1 text-white">Location</h5>
-                    <p className="text-slate-400 font-light leading-relaxed mb-4">G-14/15, Sovin Hormone Clinic, Dehradun</p>
+                    <p className="text-slate-400 font-light leading-relaxed mb-4">G-14/15, Dr. Sonal Shrivastava Clinic, Dehradun</p>
                     <a
-                      href="https://www.google.com/maps/search/?api=1&query=Sovin+Hormone+Clinic,+Dehradun"
+                      href="https://www.google.com/maps/search/?api=1&query=Dr.+Sonal+Shrivastava+Clinic,+Dehradun"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/5 hover:bg-gradient-gold hover:text-black border border-white/10 hover:border-gold-500 text-white text-sm font-bold uppercase tracking-widest rounded-full transition-all duration-500 shadow-lg"
@@ -187,7 +187,7 @@ export default function BookingAndMap() {
               <div className="absolute inset-0 pointer-events-none border-4 border-transparent group-hover:border-gold-500/20 transition-colors duration-700 z-10 rounded-3xl"></div>
               {/* Google Maps Embed using exact provided address */}
               <iframe
-                src="https://maps.google.com/maps?q=Sovin+Hormone+Clinic,+Dehradun&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Dr.+Sonal+Shrivastava+Clinic,+Dehradun&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

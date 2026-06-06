@@ -19,7 +19,7 @@ export default function Header() {
             <div className="flex-shrink-0 flex items-center">
               <div className="flex flex-col">
                 <h1 className="text-2xl font-serif font-bold text-white tracking-tight leading-none">
-                  Sovin
+                  Dr. Sonal Shrivastava
                 </h1>
                 <span className="text-[10px] uppercase tracking-[0.2em] text-gold-500 font-semibold mt-1">Hormone Clinic</span>
               </div>

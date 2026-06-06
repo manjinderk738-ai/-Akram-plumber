@@ -7,7 +7,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <h2 className="text-3xl font-serif tracking-wide mb-6">
-          Sovin Hormone Clinic
+          Dr. Sonal Shrivastava Clinic
         </h2>
         <p className="text-gray-400 mb-10 max-w-md mx-auto font-light leading-relaxed">
           Redefining Hormonal excellence with personalized care and advanced natural treatments.
@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
 
         <div className="text-gray-500 text-sm font-light border-t border-white/5 pt-8">
-          &copy; {new Date().getFullYear()} Sovin Hormone Clinic. All rights reserved. <br/>
+          &copy; {new Date().getFullYear()} Dr. Sonal Shrivastava Clinic. All rights reserved. <br/>
           <span className="opacity-50 text-xs mt-2 inline-block">Crafted for premium healthcare.</span>
         </div>
       </div>

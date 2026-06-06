@@ -14,7 +14,7 @@ const reviews = [
     name: "Pritam Jana",
     date: "6 months ago",
     rating: 5,
-    text: "Nice experienced, genuine guidance consultant and treatment bills provided by Sovin clinic, at clement town dehradun.",
+    text: "Nice experienced, genuine guidance consultant and treatment bills provided by Dr. Sonal Shrivastava clinic, at clement town dehradun.",
     image: "https://ui-avatars.com/api/?name=Pritam+Jana&background=18181b&color=fbbf24"
   },
   {
