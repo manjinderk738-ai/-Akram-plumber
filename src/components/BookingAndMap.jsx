@@ -21,7 +21,7 @@ export default function BookingAndMap() {
     e.preventDefault();
 
     // Format WhatsApp message
-    const whatsappNumber = "919368212601";
+    const whatsappNumber = "919027489104";
     const text = `*New Appointment Request*\n\n*Name:* ${formData.name}\n*Phone:* ${formData.phone}\n*Date:* ${formData.date}\n*Time:* ${formData.time}\n*Service:* ${formData.service}\n*Notes:* ${formData.message || 'None'}`;
 
     const encodedText = encodeURIComponent(text);
@@ -37,9 +37,9 @@ export default function BookingAndMap() {
   };
 
   return (
-    <section id="booking" className="py-32 bg-[zinc-900] text-white relative overflow-hidden">
+    <section id="booking" className="py-32 bg-zinc-900 text-white relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[gold-500]/5 to-transparent pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-gold-500/5 to-transparent pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -50,12 +50,12 @@ export default function BookingAndMap() {
           className="text-center max-w-3xl mx-auto mb-20"
         >
           <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full glass-dark mb-6">
-            <div className="w-2 h-2 rounded-full bg-[gold-500]"></div>
-            <span className="text-sm font-medium tracking-widest uppercase text-[gold-500]">Reservations</span>
+            <div className="w-2 h-2 rounded-full bg-gold-500"></div>
+            <span className="text-sm font-medium tracking-widest uppercase text-gold-500">Reservations</span>
           </div>
           <h3 className="text-5xl font-serif mb-6 leading-tight">Request an Appointment</h3>
           <p className="text-lg text-gray-300 font-light">
-            Schedule a private consultation at our state-of-the-art facility. Experience a new standard of personalized Hormonal care.
+            Schedule a private consultation at our state-of-the-art facility. Experience a new standard of personalized Ophthalmology care.
           </p>
         </motion.div>
 
@@ -91,16 +91,8 @@ export default function BookingAndMap() {
                   <label htmlFor="time" className="block text-sm font-medium text-slate-400 mb-2 uppercase tracking-widest">Preferred Time</label>
                   <select id="time" name="time" required value={formData.time} onChange={handleChange} className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:ring-1 focus:ring-gold-500 focus:border-gold-500 outline-none transition-all appearance-none [&>option]:bg-zinc-900 shadow-inner">
                     <option value="" disabled className="text-slate-500">Select Time</option>
-                    <option value="11:00 AM">11:00 AM</option>
-                    <option value="1:00 PM">1:00 PM</option>
-                    <option value="3:00 PM">3:00 PM</option>
-                    <option value="5:00 PM">5:00 PM</option>
-                    <option value="7:00 PM">7:00 PM</option>
-
-
-
-
-
+                    <option value="Morning Slot (10am-2pm / 12pm-2pm)">Morning Slot</option>
+                    <option value="Evening Slot (5pm-7pm)">Evening Slot (5:00 PM - 7:00 PM)</option>
                   </select>
                 </div>
               </div>
@@ -147,9 +139,9 @@ export default function BookingAndMap() {
                   </div>
                   <div>
                     <h5 className="font-bold text-lg uppercase tracking-widest mb-1 text-white">Location</h5>
-                    <p className="text-slate-400 font-light leading-relaxed mb-4">G-14/15, Dr. Sonal Shrivastava Clinic, Dehradun</p>
+                    <p className="text-slate-400 font-light leading-relaxed mb-4">Special Wing, Pump House, 34/2, near Amitabh Textile Mill, Special Wing, Indian Military Academy, Dehradun, Randharwala, Uttarakhand 248007</p>
                     <a
-                      href="https://www.google.com/maps/search/?api=1&query=Dr.+Sonal+Shrivastava+Clinic,+Dehradun"
+                      href="https://www.google.com/maps/search/?api=1&query=Ramrati+Eye+Hospital,+Dehradun"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/5 hover:bg-gradient-gold hover:text-black border border-white/10 hover:border-gold-500 text-white text-sm font-bold uppercase tracking-widest rounded-full transition-all duration-500 shadow-lg"
@@ -166,7 +158,10 @@ export default function BookingAndMap() {
                   </div>
                   <div>
                     <h5 className="font-bold text-lg uppercase tracking-widest mb-1 text-white">Working Hours</h5>
-                    <p className="text-slate-400 font-light leading-relaxed">Mon - Sat: 11:00 AM - 8:00 PM</p>
+                    <p className="text-slate-400 font-light leading-relaxed text-sm">
+                      <span className="block mb-1">Mon, Wed, Fri: <span className="text-white">10:00 AM - 2:00 PM</span> & <span className="text-white">5:00 PM - 7:00 PM</span></span>
+                      <span className="block mb-1">Tue, Thu, Sat: <span className="text-white">12:00 PM - 2:00 PM</span> & <span className="text-white">5:00 PM - 7:00 PM</span></span>
+                    </p>
                     <p className="text-gold-500 font-bold tracking-widest text-xs uppercase mt-2">Sunday Closed</p>
                   </div>
                 </div>
@@ -177,7 +172,7 @@ export default function BookingAndMap() {
                   </div>
                   <div>
                     <h5 className="font-bold text-lg uppercase tracking-widest mb-1 text-white">Contact</h5>
-                    <p className="text-slate-400 font-light text-lg">+91 93682 12601</p>
+                    <p className="text-slate-400 font-light text-lg">+91 90274 89104</p>
                   </div>
                 </div>
               </div>
@@ -187,7 +182,7 @@ export default function BookingAndMap() {
               <div className="absolute inset-0 pointer-events-none border-4 border-transparent group-hover:border-gold-500/20 transition-colors duration-700 z-10 rounded-3xl"></div>
               {/* Google Maps Embed using exact provided address */}
               <iframe
-                src="https://maps.google.com/maps?q=Dr.+Sonal+Shrivastava+Clinic,+Dehradun&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Ramrati+Eye+Hospital,+Dehradun&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

@@ -3,28 +3,35 @@ import { motion } from 'framer-motion';
 import { Star, Quote } from 'lucide-react';
 
 const reviews = [
-  {
-    name: "Kishor Kumar Mahto",
-    date: "7 months ago",
-    rating: 5,
-    text: "One of the best Hormone Care doctors I've visited. Explains everything clearly, focuses on root causes, and the results have been amazing.",
-    image: "https://ui-avatars.com/api/?name=Kishor+Kumar&background=18181b&color=fbbf24"
-  },
-  {
-    name: "Pritam Jana",
-    date: "6 months ago",
-    rating: 5,
-    text: "Nice experienced, genuine guidance consultant and treatment bills provided by Dr. Sonal Shrivastava clinic, at clement town dehradun.",
-    image: "https://ui-avatars.com/api/?name=Pritam+Jana&background=18181b&color=fbbf24"
-  },
-  {
-    name: "Sagar",
-    date: "6 months ago",
-    rating: 5,
-    text: "Best doctor for homoeopathy treatment for all diseases. Nice experienced dr om",
-    image: "https://ui-avatars.com/api/?name=Sagar&background=18181b&color=fbbf24"
-  }
-];
+    {
+      name: "Aditya Anand",
+      role: "Local Guide",
+      text: "I recently visited this hospital for my grand father's eye surgery, and the experience exceeded all expectations. From the moment we entered, the staff was incredibly professional and caring.",
+      rating: 5,
+      image: "https://ui-avatars.com/api/?name=Aditya+Anand&background=18181b&color=fbbf24"
+    },
+    {
+      name: "Mnshu Thapa",
+      role: "Patient",
+      text: "Best doctor in dehradun. the staff is very cordial sweet n helpful. Dr. Sanjeev Kumar is very good one eye specialist and surgeon. I experienced nice hospitality.",
+      rating: 5,
+      image: "https://ui-avatars.com/api/?name=Mnshu+Thapa&background=ea580c&color=fff"
+    },
+    {
+      name: "Neha Saklani",
+      role: "Patient",
+      text: "Dr.sanjeev kumar is good one eye specialist and surgeon, staff is also good and cordial. A wonderful hospital with the facilities that are top notch.",
+      rating: 5,
+      image: "https://ui-avatars.com/api/?name=Neha+Saklani&background=0284c7&color=fff"
+    },
+    {
+      name: "Abhishek Dhiman",
+      role: "Local Guide",
+      text: "I recently took my grandmother to this hospital for cataract surgery, and I have to say, we had a really positive experience. From the moment we walked in, we felt well taken care of.",
+      rating: 5,
+      image: "https://ui-avatars.com/api/?name=Abhishek+Dhiman&background=18181b&color=fbbf24"
+    }
+  ];
 
 export default function Reviews() {
   return (
@@ -49,17 +56,17 @@ export default function Reviews() {
             <h3 className="text-5xl md:text-6xl font-serif text-white mb-8 leading-tight">Patient<br />Experiences</h3>
 
             <div className="glass-dark-card p-8 rounded-3xl flex items-center gap-6 mb-8 group hover:-translate-y-2 transition-transform duration-500">
-              <div className="text-6xl font-serif text-white">4.8</div>
+              <div className="text-6xl font-serif text-white">4.5</div>
               <div>
                 <div className="flex text-gold-500 mb-2">
                   {[...Array(5)].map((_, i) => <Star key={i} size={22} className="fill-current" />)}
                 </div>
-                <div className="text-slate-400 font-medium tracking-widest text-xs uppercase">Based on 282 reviews</div>
+                <div className="text-slate-400 font-medium tracking-widest text-xs uppercase">Based on 136 reviews</div>
               </div>
             </div>
 
             <p className="text-slate-300 text-lg font-light leading-relaxed">
-              We take pride in delivering the highest quality Hormonal care. Our perfect rating reflects an unwavering commitment to patient excellence.
+              We take pride in delivering the highest quality Ophthalmology care. Our perfect rating reflects an unwavering commitment to patient excellence.
             </p>
           </motion.div>
 
